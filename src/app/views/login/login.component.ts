@@ -10,6 +10,7 @@ import { LoginService } from '../../services/login.service';
 })
 export class LoginComponent {
 
+  // NOTE: Private props
   email: String;
   pass: String;
 
@@ -24,6 +25,7 @@ export class LoginComponent {
     console.log(result);
   };
 
+  // NOTE: Form Submit function
   doLogin() {
     this.loginService.doLogin(this.email, this.pass).then(this.loginSuccess, this.loginFailure);
   }

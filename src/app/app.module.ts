@@ -17,6 +17,8 @@ import { MainContainerComponent } from './views/main-container/main-container.co
 import { EstatisticaContainerComponent } from './views/estatistica-container/estatistica-container.component';
 import { MensagemContainerComponent } from './views/mensagem-container/mensagem-container.component';
 
+// NOTE: All components that'll be used by application
+// TODO: Transform this in modules
 @NgModule({
   declarations: [
     AppComponent,

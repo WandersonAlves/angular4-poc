@@ -4,6 +4,8 @@ import { MainContainerComponent } from '../views/main-container/main-container.c
 import { EstatisticaContainerComponent } from '../views/estatistica-container/estatistica-container.component';
 import { MensagemContainerComponent } from '../views/mensagem-container/mensagem-container.component';
 
+// NOTE: We import component to use as base components
+
 export const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   {

@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
   constructor(private router: Router) {}
 
   ngOnInit() {
+    // NOTE: First route to go when app loads
     this.router.navigate(['login']);
   }
 }

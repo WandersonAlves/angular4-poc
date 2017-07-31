@@ -11,6 +11,7 @@ export class MainContainerComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    // NOTE: Children routes are accessed by 'parent route/children route'
     this.router.navigate(['main/estatistica']);
   }
 

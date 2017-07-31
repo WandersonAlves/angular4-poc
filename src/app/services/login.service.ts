@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios';
 
-import 'rxjs/add/operator/toPromise';
-
 @Injectable()
 export class LoginService {
 
@@ -13,6 +11,7 @@ export class LoginService {
       login: email,
       senha: pass
     };
+    // NOTE: Axios for HTTP requests
     return axios.post('http://plurieducacional.com.br/homologacao/pluriidapi/webservice.php', params);
   }
 
