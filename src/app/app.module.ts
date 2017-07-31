@@ -15,13 +15,15 @@ import { MaterialModule } from './components/material.module';
 import 'hammerjs';
 import { MainContainerComponent } from './views/main-container/main-container.component';
 import { EstatisticaContainerComponent } from './views/estatistica-container/estatistica-container.component';
+import { MensagemContainerComponent } from './views/mensagem-container/mensagem-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MainContainerComponent,
-    EstatisticaContainerComponent
+    EstatisticaContainerComponent,
+    MensagemContainerComponent
   ],
   imports: [
     BrowserModule,
