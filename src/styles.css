@@ -12,3 +12,7 @@ body {
 .img-bg-color {
   background-color: #673ab7;
 }
+
+.full-viewport {
+  height: 100vh !important;
+}

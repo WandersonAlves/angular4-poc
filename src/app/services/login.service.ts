@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import axios from 'axios';
 
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class LoginService {
-
-  constructor(private http: Http) { }
 
   doLogin(email: String, pass: String) {
     let params = {
@@ -15,7 +13,7 @@ export class LoginService {
       login: email,
       senha: pass
     };
-    return this.http.post('http://plurieducacional.com.br/homologacao/pluriidapi/webservice.php', params).toPromise();
+    return axios.post('http://plurieducacional.com.br/homologacao/pluriidapi/webservice.php', params);
   }
 
 }

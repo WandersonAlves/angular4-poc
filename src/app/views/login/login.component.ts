@@ -15,7 +15,7 @@ export class LoginComponent {
   constructor(private loginService: LoginService) { }
 
   private loginSuccess = (result) => {
-    console.log(JSON.parse(result._body));
+    console.log(result.data);
   };
 
   private loginFailure = (result) => {
