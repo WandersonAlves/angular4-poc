@@ -1,11 +1,6 @@
-<div class="full-viewport" fxFlex fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
-  <md-card class="login-card"> <img md-card-image class="img-bg-color" src="assets/img/semchamada.png">
-    <md-card-content>
+
       <form class="login-form">
-        <md-input-container class="full-width"> <input mdInput placeholder="Email" [(ngModel)]="email" name="email"/> </md-input-container>
-        <md-input-container class="full-width"> <input mdInput placeholder="Password" [(ngModel)]="pass" name="pass" type="password"/> </md-input-container>
+        <input  placeholder="Email" [(ngModel)]="email" name="email"/>
+        <input  placeholder="Password" [(ngModel)]="pass" name="pass" type="password"/>
       </form>
-      <button md-raised-button color="primary" class="full-width" (click)='doLogin()'>Login</button>
-    </md-card-content>
-  </md-card>
-</div>
+      <button class="full-width" (click)='doLogin()'>Login</button>

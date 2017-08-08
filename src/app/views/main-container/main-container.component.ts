@@ -12,7 +12,7 @@ export class MainContainerComponent implements OnInit {
 
   ngOnInit() {
     // NOTE: Children routes are accessed by 'parent route/children route'
-    this.router.navigate(['main/estatistica']);
+    this.router.navigate(['main/analise-turma']);
   }
 
 }

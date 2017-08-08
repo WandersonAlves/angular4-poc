@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from '../views/login/login.component';
 import { MainContainerComponent } from '../views/main-container/main-container.component';
-import { EstatisticaContainerComponent } from '../views/estatistica-container/estatistica-container.component';
-import { MensagemContainerComponent } from '../views/mensagem-container/mensagem-container.component';
+import { AnaliseDisciplinaComponent } from '../views/analise-disciplina/analise-disciplina.component';
+import { AnaliseTurmaComponent } from '../views/analise-turma/analise-turma.component';
 
 // NOTE: We import component to use as base components
 
@@ -13,12 +13,12 @@ export const appRoutes: Routes = [
     component: MainContainerComponent,
     children: [
       {
-        path: 'estatistica',
-        component: EstatisticaContainerComponent
+        path: 'analise-disciplina',
+        component: AnaliseDisciplinaComponent
       },
       {
-        path: 'mensagem',
-        component: MensagemContainerComponent
+        path: 'analise-turma',
+        component: AnaliseTurmaComponent
       }
     ]
   },
